@@ -1,0 +1,205 @@
+/* Full HD */
+@media all and (min-width: 1920px) {
+  .search__filter {
+    display: flex;
+    align-items: center;
+    width: 300.5px;
+    height: 30px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--green200);
+    border-radius: 4px;
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .search__up,
+      .search__down {
+        cursor: pointer;
+        width: 10px;
+        height: 6px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .search__up {
+        background-image: url("../../../../../../assets/icon/search/search-up.svg");
+      }
+      .search__down {
+        background-image: url("../../../../../../assets/icon/search/search-down.svg");
+      }
+    }
+    > div:not(.search__date) {
+      margin-right: 8px;
+    }
+    .search__status {
+      width: 73px;
+    }
+    .search__breed {
+      width: 46px;
+    }
+    .search__date {
+      width: 142px;
+    }
+  }
+}
+
+/* Tablet Landscape */
+@media all and (min-width: 1024px) and (max-width: 1919px) {
+  .search__filter {
+    display: flex;
+    align-items: center;
+    width: 265.5px;
+    height: 30px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--green200);
+    border-radius: 4px;
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .search__up,
+      .search__down {
+        cursor: pointer;
+        width: 10px;
+        height: 6px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .search__up {
+        background-image: url("../../../../../../assets/icon/search/search-up.svg");
+      }
+      .search__down {
+        background-image: url("../../../../../../assets/icon/search/search-down.svg");
+      }
+    }
+    > div:not(.search__date) {
+      margin-right: 8px;
+    }
+    .search__status {
+      width: 73px;
+    }
+    .search__breed {
+      width: 36px;
+    }
+    .search__date {
+      width: 115px;
+    }
+  }
+  .search__filter.folded {
+    width: 100.5px;
+    .search__breed,
+    .search__date {
+      display: none;
+    }
+  }
+}
+
+/* Tablet Portrait */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .search__filter {
+    display: flex;
+    align-items: center;
+    width: 265.5px;
+    height: 30px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--green200);
+    border-radius: 4px;
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .search__up,
+      .search__down {
+        cursor: pointer;
+        width: 10px;
+        height: 6px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .search__up {
+        background-image: url("../../../../../../assets/icon/search/search-up.svg");
+      }
+      .search__down {
+        background-image: url("../../../../../../assets/icon/search/search-down.svg");
+      }
+    }
+    > div:not(.search__date) {
+      margin-right: 8px;
+    }
+    .search__status {
+      width: 73px;
+    }
+    .search__breed {
+      width: 36px;
+    }
+    .search__date {
+      width: 115px;
+    }
+  }
+  .search__filter.folded {
+    width: 100.5px;
+    .search__breed,
+    .search__date {
+      display: none;
+    }
+  }
+}
+
+/* Mobile*/
+@media all and (max-width: 767px) {
+  .search__filter {
+    display: grid;
+    grid-template-columns: 2.2fr 1fr 3.5fr;
+    width: auto;
+    height: 40px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--green200);
+    border-radius: 10px;
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .search__up,
+      .search__down {
+        cursor: pointer;
+        width: 10px;
+        height: 6px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .search__up {
+        background-image: url("../../../../../../assets/icon/search/search-up.svg");
+      }
+      .search__down {
+        background-image: url("../../../../../../assets/icon/search/search-down.svg");
+      }
+    }
+    > div:not(.search__date) {
+      margin-right: 8px;
+    }
+    .search__status {
+      width: 73px;
+    }
+    .search__breed {
+      width: 36px;
+    }
+    .search__date {
+      width: 125px;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+/* Full HD */
+@media all and (min-width: 1920px) {
+  .search {
+    display: flex;
+    flex-direction: column;
+    // display: grid;
+    // grid-template-rows: 40px auto 1fr;
+    position: relative;
+    grid-row: span 2;
+    width: 305.5px;
+    padding: 10px;
+  }
+}
+
+/* Tablet Landscape */
+@media all and (min-width: 1024px) and (max-width: 1919px) {
+  .search {
+    display: flex;
+    flex-direction: column;
+    // display: grid;
+    // grid-template-rows: 40px auto 1fr;
+    position: relative;
+    grid-row: span 2;
+    //width: 275.5px;
+    padding: 10px;
+  }
+  .search.folded {
+    width: 110.5px;
+    //grid-template-rows: 40px 1fr;
+  }
+}
+
+/* Tablet Portrait */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .search {
+    display: flex;
+    flex-direction: column;
+    // display: grid;
+    // grid-template-rows: 40px auto 1fr;
+    position: relative;
+    grid-row: span 2;
+    //width: 275.5px;
+    padding: 10px;
+  }
+  .search.folded {
+    width: 110.5px;
+    //grid-template-rows: 40px 1fr;
+  }
+}
+
+/* Mobile*/
+@media all and (max-width: 767px) {
+  .search {
+    display: flex;
+    flex-direction: column;
+    // display: grid;
+    // grid-template-rows: auto 1fr;
+    grid-row: span 2;
+    width: calc(100vw - 40px);
+    padding: 0px 20px;
+  }
+
+  .search {
+    position: absolute;
+  }
+}

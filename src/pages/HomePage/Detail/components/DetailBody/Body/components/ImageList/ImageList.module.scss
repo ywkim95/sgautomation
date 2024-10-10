@@ -1,0 +1,265 @@
+/* Full HD */
+@media all and (min-width:1920px) {
+  .panelBody__image {
+    position: relative;
+    width: calc((100vh - 335px) * 1.33189634783);
+    height: calc(100vh - 335px);
+    min-width: 752.52px;
+    min-height: 565px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    background-size : contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    .panelBody__imageContainer {
+      transition: transform 0.3s ease-out;
+      will-change: transform;
+      img {
+        width: 100%;
+        flex-shrink: 0;
+          object-fit: contain;
+      }
+    }
+    .empty{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      color: white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+  .panelBody__imageName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+  }
+  .panelBody__imageSelect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    gap: 5px;
+    div {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: var(--white);
+      opacity: 0.3;
+    }
+    div.selected {
+      opacity: 1;
+    }
+  }
+}
+
+/* Tablet Landscape */
+@media all and (min-width:1024px) and (max-width:1919px) {
+  .panelBody__image {
+    position: relative;
+    width: 629.5px;
+    height: 472.634px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    //background-image: url("../../../../../../../../assets/img/example.jpg");
+    background-size : contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    .panelBody__imageContainer {
+      //display: flex;
+      transition: transform 0.3s ease-out;
+      will-change: transform;
+      img {
+        width: 100%;
+        flex-shrink: 0;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .panelBody__imageName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+  }
+  .panelBody__imageSelect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    gap: 5px;
+    div {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: var(--white);
+      opacity: 0.3;
+    }
+    div.selected {
+      opacity: 1;
+    }
+  }
+
+  .panelBody__imageWrap.folded {
+    .panelBody__image {
+      width: calc((100vh - 420px) * 1.127);
+      height: calc(100vh - 420px);
+      min-width: 484.5px;
+      min-height: 300px;
+      max-width: 794.5px;
+    }
+  }
+}
+
+/* Tablet Portrait */
+@media all and (min-width:768px) and (max-width:1023px) {
+  .panelBody__image {
+    position: relative;
+    width: 372.5px;
+    height: 279.676px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    //background-image: url("../../../../../../../../assets/img/example.jpg");
+    background-size : contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    .panelBody__imageContainer {
+      //display: flex;
+      transition: transform 0.3s ease-out;
+      will-change: transform;
+      img {
+        width: 100%;
+        flex-shrink: 0;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .panelBody__imageName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+  }
+  .panelBody__imageSelect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    gap: 5px;
+    div {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: var(--white);
+      opacity: 0.3;
+    }
+    div.selected {
+      opacity: 1;
+    }
+  }
+
+  .panelBody__imageWrap.folded {
+    .panelBody__image {
+      width: 537.5px;
+      height: 403.56px;
+    }
+  }
+
+}
+
+/* Mobile*/
+@media all and (max-width:767px) {
+  .panelBody__image {
+    position: relative;
+    width: calc(100vw - 40px);
+    min-height: calc((100vw - 40px) * 0.75080917642);
+    border-radius: 10px;
+    //background-image: url("../../../../../../../../assets/img/example.jpg");
+    background-size : contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    .panelBody__imageContainer {
+      //display: flex;
+      transition: transform 0.3s ease-out;
+      will-change: transform;
+      img {
+        width: 100%;
+        flex-shrink: 0;
+        object-fit: contain;
+      }
+    }
+    .panelBody__imageName {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      color: white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 35px;
+    }
+  }
+}
+
+.disableSelect {
+ user-select: none;
+}

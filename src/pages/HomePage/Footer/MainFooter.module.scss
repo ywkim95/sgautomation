@@ -1,0 +1,159 @@
+/* Full HD */
+@media all and (min-width: 1920px) {
+  .footer {
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 55px;
+    .footer__information {
+      display: flex;
+      font-size: 1.1rem;
+      font-weight: 500;
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      .footer__informationCompany {
+        width: 423.5px;
+      }
+    }
+    .footer__logo {
+      display: flex;
+      gap: 29px;
+      figure {
+        height: 30px;
+        background-repeat: no-repeat;
+      }
+      .footer__logoPodo {
+        width: 96.5px;
+        background-image: url("../../../assets/icon/logo/logo-podo.svg");
+      }
+      .footer__logoImageLab {
+        width: 77px;
+        background-image: url("../../../assets/icon/logo/logo-imageLab.svg");
+      }
+    }
+  }
+}
+
+/* Tablet Landscape */
+@media all and (min-width: 1024px) and (max-width: 1919px) {
+  .footer {
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: center;
+    width: 985px;
+    padding: 0px;
+    .footer__information {
+      display: flex;
+      font-size: 1.1rem;
+      font-weight: 500;
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      .footer__informationCompany {
+        width: 333.5px;
+      }
+    }
+    .footer__logo {
+      display: flex;
+      gap: 29px;
+      figure {
+        height: 30px;
+        background-repeat: no-repeat;
+      }
+      .footer__logoPodo {
+        width: 96.5px;
+        background-image: url("../../../assets/icon/logo/logo-podo.svg");
+      }
+      .footer__logoImageLab {
+        width: 77px;
+        background-image: url("../../../assets/icon/logo/logo-imageLab.svg");
+      }
+    }
+  }
+}
+
+/* Tablet Portrait */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    align-items: center;
+    width: 728px;
+    padding: 0px;
+    .footer__information {
+      display: flex;
+      font-size: 1.1rem;
+      font-weight: 500;
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      .footer__informationCompany {
+        width: 313.5px;
+      }
+    }
+    .footer__logo {
+      display: flex;
+      gap: 19px;
+      figure {
+        height: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      .footer__logoPodo {
+        width: 66.5px;
+        background-image: url("../../../assets/icon/logo/logo-podo.svg");
+      }
+      .footer__logoImageLab {
+        width: 57px;
+        background-image: url("../../../assets/icon/logo/logo-imageLab.svg");
+      }
+    }
+  }
+}
+
+/* Mobile*/
+@media all and (max-width: 767px) {
+  .footer {
+    height: 55px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 20px;
+    z-index: 99;
+    background-color: white;
+    .footer__information {
+      display: none;
+    }
+    .footer__logo {
+      display: flex;
+      figure {
+        width: 80px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+      }
+      .footer__logoPodo {
+        height: 25px;
+        background-image: url("../../../assets/icon/logo/logo-podo.svg");
+      }
+      .footer__logoImageLab {
+        height: 25px;
+        background-image: url("../../../assets/icon/logo/logo-imageLab.svg");
+      }
+    }
+  }
+}

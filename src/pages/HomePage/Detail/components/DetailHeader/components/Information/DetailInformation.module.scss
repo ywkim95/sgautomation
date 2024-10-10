@@ -1,0 +1,55 @@
+/* Full HD */
+@media all and (min-width:1920px) {
+  .detail__information {
+    font-weight: 500;
+    margin-right: 15px;
+    .detail__information-bread,
+    .detail__information-date,
+    .detail__information-region {
+      font-weight: 600;
+    }
+  }
+}
+
+/* Tablet Landscape */
+@media all and (min-width:1024px) and (max-width:1919px) {
+  .detail__information {
+    font-weight: 500;
+    margin-right: 15px;
+    .detail__informationBread,
+    .detail__informationDate,
+    .detail__informationRegion {
+      font-weight: 600;
+    }
+  }
+}
+
+/* Tablet Portrait */
+@media all and (min-width:768px) and (max-width:1023px) {
+  .detail__information {
+    font-weight: 500;
+    margin-right: 15px;
+    .detail__informationBread,
+    .detail__informationDate,
+    .detail__informationRegion {
+      font-weight: 600;
+    }
+  }
+}
+
+/* Mobile*/
+@media all and (max-width:767px) {
+  .detail__information {
+    font-weight: 500;
+    margin-right: 15px;
+    .detail__informationBread,
+    .detail__informationDate,
+    .detail__informationRegion,
+    .detail__informationRegionInf {
+      display: none;
+    }
+    .detail__informationBreadInf:after {
+      content: " / ";
+    }
+  }
+}

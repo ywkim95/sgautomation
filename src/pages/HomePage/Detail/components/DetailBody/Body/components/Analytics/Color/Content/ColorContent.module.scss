@@ -1,0 +1,63 @@
+/* Full HD */
+@media all and (min-width:1920px) {
+  .panelBody__colorResult {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+}
+
+/* Tablet Landscape */
+@media all and (min-width:1024px) and (max-width:1919px) {
+  .panelBody__colorResult {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+/* Tablet Portrait */
+@media all and (min-width:768px) and (max-width:1023px) {
+  .panelBody__colorResult {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+/* Mobile*/
+@media all and (max-width:767px) {
+  .panelBody__colorResult {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+.panelBody__colorMeasurement,
+.panelBody__colorAnalysis {
+  display: grid;
+  grid-template-rows: 1fr 12px;
+  gap: 5px;
+  width: 100%;
+  & figure {
+    border-radius: 5px;
+  }
+  & figcaption {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+  }
+}
+
+.failedResult {
+  .panelBody__colorAnalysisColor {
+    background: repeating-linear-gradient(-45deg, var(--white), var(--white) 6px, var(--red100) 0, var(--red100) 11px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--red200);
+    font-size: 16px;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,376 @@
+/* Full HD */
+@media all and (min-width: 1920px) {
+  .search__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3.5fr;
+    align-items: center;
+    height: 40px;
+    padding-left: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 4px;
+    width: 290.5px;
+    > div {
+      margin-right: 8px;
+      font-size: 1.6rem;
+    }
+    .search__rowStatus {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 4px;
+      height: 22px;
+      border-radius: 5px;
+      margin-right: 5px;
+      padding-right: 5px;
+      .search__rowStatusIcon {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        margin-left: 5px;
+      }
+      .search__rowStatusName {
+        border-radius: 50%;
+        font-size: 1.4rem;
+      }
+    }
+    .search__rowBreed {
+      position: relative;
+      left: 2.5px;
+      width: 36px;
+      font-weight: 700;
+      margin-right: 18px;
+    }
+    .search__rowDate {
+      position: relative;
+      left: 2.5px;
+      width: auto;
+      margin-right: 0px;
+    }
+    .notAnalyzed {
+      width: 78px;
+      background-color: var(--lightGray);
+      .search__rowStatusName {
+        color: var(--DarkFontColor);
+      }
+    }
+    .analysisCompleted {
+      width: 78px;
+      background-color: var(--green100);
+      .search__rowStatusIcon {
+        background-color: var(--green200);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../../../../../../assets/icon/search/search-check.svg");
+        background-size: 8px;
+      }
+      .search__rowStatusName {
+        color: var(--green200);
+      }
+    }
+    .analysisFailed {
+      width: 78px;
+      background-color: var(--red100);
+      .search__rowStatusIcon {
+        background-color: var(--red200);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../../../../../../assets/icon/search/search-exclamation.svg");
+        background-size: 2px;
+      }
+      .search__rowStatusName {
+        color: var(--red200);
+      }
+    }
+  }
+  .search__row:hover {
+    background-color: #f7f7f7;
+  }
+}
+
+/* Labtop */
+@media all and (min-width: 1280px) and (max-width: 1919px) {
+  .search__row:hover {
+    background-color: #f7f7f7;
+  }
+}
+
+/* Tablet Landscape */
+@media all and (min-width: 1024px) and (max-width: 1919px) {
+  .search__row {
+    display: flex;
+    align-items: center;
+    width: 255px;
+    height: 32px;
+    padding-left: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 4px;
+    > div {
+      margin-right: 8px;
+      font-size: 1.6rem;
+    }
+    .search__rowStatus {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 4px;
+      height: 22px;
+      border-radius: 5px;
+      margin-right: 5px;
+      padding-right: 5px;
+      .search__rowStatusIcon {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        margin-left: 5px;
+      }
+      .search__rowStatusName {
+        border-radius: 50%;
+        font-size: 1.4rem;
+      }
+    }
+    .search__rowBreed {
+      width: 36px;
+      font-weight: 700;
+    }
+    .search__rowDate {
+      width: 115px;
+      margin-right: 0px;
+    }
+    .notAnalyzed {
+      width: 78px;
+      background-color: var(--lightGray);
+      .search__rowStatusName {
+        color: var(--DarkFontColor);
+      }
+    }
+    .analysisCompleted {
+      width: 78px;
+      background-color: var(--green100);
+      .search__rowStatusIcon {
+        background-color: var(--green200);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../../../../../../assets/icon/search/search-check.svg");
+        background-size: 8px;
+      }
+      .search__rowStatusName {
+        color: var(--green200);
+      }
+    }
+    .analysisFailed {
+      width: 78px;
+      background-color: var(--red100);
+      .search__rowStatusIcon {
+        background-color: var(--red200);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../../../../../../assets/icon/search/search-exclamation.svg");
+        background-size: 2px;
+      }
+      .search__rowStatusName {
+        color: var(--red200);
+      }
+    }
+  }
+  .search__row.folded {
+    width: 91px;
+    .search__rowBreed,
+    .search__rowDate {
+      display: none;
+    }
+  }
+}
+
+/* Tablet Portrait */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .search__row {
+    display: flex;
+    align-items: center;
+    width: 255px;
+    height: 32px;
+    padding-left: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 4px;
+    > div {
+      margin-right: 8px;
+      font-size: 1.6rem;
+    }
+    .search__rowStatus {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 4px;
+      height: 22px;
+      border-radius: 5px;
+      margin-right: 5px;
+      padding-right: 5px;
+      .search__rowStatusIcon {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        margin-left: 5px;
+      }
+      .search__rowStatusName {
+        border-radius: 50%;
+        font-size: 1.4rem;
+      }
+    }
+    .search__rowBreed {
+      width: 36px;
+      font-weight: 700;
+    }
+    .search__rowDate {
+      width: 115px;
+      margin-right: 0px;
+    }
+    .notAnalyzed {
+      width: 78px;
+      background-color: var(--lightGray);
+      .search__rowStatusName {
+        color: var(--DarkFontColor);
+      }
+    }
+    .analysisCompleted {
+      width: 78px;
+      background-color: var(--green100);
+      .search__rowStatusIcon {
+        background-color: var(--green200);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../../../../../../assets/icon/search/search-check.svg");
+        background-size: 8px;
+      }
+      .search__rowStatusName {
+        color: var(--green200);
+      }
+    }
+    .analysisFailed {
+      width: 78px;
+      background-color: var(--red100);
+      .search__rowStatusIcon {
+        background-color: var(--red200);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../../../../../../assets/icon/search/search-exclamation.svg");
+        background-size: 2px;
+      }
+      .search__rowStatusName {
+        color: var(--red200);
+      }
+    }
+  }
+  .search__row.folded {
+    width: 91px;
+    .search__rowBreed,
+    .search__rowDate {
+      display: none;
+    }
+  }
+}
+
+/* Mobile*/
+@media all and (max-width: 767px) {
+  .search__row {
+    display: grid;
+    grid-template-columns: 2.2fr 1fr 3.5fr;
+    align-items: center;
+    height: 40px;
+    padding-left: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 4px;
+    > div {
+      margin-right: 8px;
+      font-size: 1.6rem;
+    }
+    .search__rowStatus {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 4px;
+      height: 22px;
+      border-radius: 5px;
+      margin-right: 5px;
+      padding-right: 5px;
+      .search__rowStatusIcon {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        margin-left: 5px;
+      }
+      .search__rowStatusName {
+        border-radius: 50%;
+        font-size: 1.4rem;
+      }
+    }
+    .search__rowBreed {
+      position: relative;
+      left: 2.5px;
+      width: 36px;
+      font-weight: 700;
+    }
+    .search__rowDate {
+      position: relative;
+      left: 2.5px;
+      width: auto;
+      margin-right: 0px;
+    }
+    .notAnalyzed {
+      width: 78px;
+      background-color: var(--lightGray);
+      .search__rowStatusName {
+        color: var(--DarkFontColor);
+      }
+    }
+    .analysisCompleted {
+      width: 78px;
+      background-color: var(--green100);
+      .search__rowStatusIcon {
+        background-color: var(--green200);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../../../../../../assets/icon/search/search-check.svg");
+        background-size: 8px;
+      }
+      .search__rowStatusName {
+        color: var(--green200);
+      }
+    }
+    .analysisFailed {
+      width: 78px;
+      background-color: var(--red100);
+      .search__rowStatusIcon {
+        background-color: var(--red200);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../../../../../../assets/icon/search/search-exclamation.svg");
+        background-size: 2px;
+      }
+      .search__rowStatusName {
+        color: var(--red200);
+      }
+    }
+  }
+}
+
+// .analysisCompleted .search__rowStatusName::after {
+//   content: "분석 완료";
+// }
+
+// .analysisFailed .search__rowStatusName::after {
+//   content: "분석 실패";
+// }
+
+// .notAnalyzed .search__rowStatusName::after {
+//   content: "미분석";
+// }
+
+.selectRow {
+  background-color: var(--selectColor);
+  &:hover {
+    background-color: var(--selectColorHover);
+  }
+}

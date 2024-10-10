@@ -1,0 +1,170 @@
+/* Full HD */
+@media all and (min-width:1920px) {
+  .detailHeader {
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+    font-size: 2.0rem;
+    .detailHeader__emphasis {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 35px;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      margin-right: 10px;
+      font-weight: 700;
+      color: var(--white);
+    }
+  }
+
+  .completedResult {
+    .detailHeader__emphasis {
+      background-color: var(--green200);
+    }
+  }
+
+  .failedResult {
+    .detailHeader__emphasis {
+      background-color: var(--red200);
+    }
+  }
+
+  .completedResult {
+    .detailHeader__error {
+      display: none;
+    }
+  }
+}
+
+/* Tablet Landscape */
+@media all and (min-width:1024px) and (max-width:1919px) {
+  .detailHeader {
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+    font-size: 1.4rem;
+    .detailHeader__emphasis {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 75px;
+      height: 25px;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      margin-right: 10px;
+      font-weight: 700;
+      color: var(--white);
+    }
+  }
+
+  .completedResult {
+    .detailHeader__emphasis {
+      background-color: var(--green200);
+
+    }
+  }
+
+  .failedResult {
+    .detailHeader__emphasis {
+      background-color: var(--red200);
+    }
+  }
+}
+
+/* Tablet Portrait */
+@media all and (min-width:768px) and (max-width:1023px) {
+  .detailHeader {
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+    font-size: 1.3rem;
+    .detailHeader__emphasis {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 75px;
+      height: 25px;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      margin-right: 10px;
+      font-weight: 700;
+      color: var(--white);
+      padding: 0px 10px;
+    }
+  }
+
+  .failedResult {
+    .detailHeader__emphasis {
+      background-color: var(--red200);
+
+    }
+  }
+
+  .completedResult {
+    .detailHeader__emphasis {
+      background-color: var(--green200);
+
+    }
+  }
+}
+
+/* Mobile*/
+@media all and (max-width:767px) {
+  .detailHeader {
+    display: none;
+  }
+
+  .detailHeader {
+    position: absolute;
+    top: 73px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    width: calc(100vw - 30px);
+    height: 30px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    background-color: var(--white);
+    z-index: 99;
+    min-width: 310px;
+    .detailHeader__emphasis {
+      z-index: 99;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 75px;
+      height: 25px;
+      border-radius: 10px;
+      margin-right: 10px;
+      font-weight: 700;
+      color: var(--white);
+    }
+    &::before {
+      position: absolute;
+      z-index: 98;
+      background-color: var(--white);
+      width: calc(100vw - 30px);
+      height: 21px;
+      right: 0px;
+      top: 24px;
+      min-width: 310px;
+      content: "";
+    }
+  }
+
+  .completedResult {
+    .detailHeader__emphasis {
+      background-color: var(--green200);
+
+    }
+  }
+
+  .failedResult {
+    .detailHeader__emphasis {
+      background-color: var(--red200);
+
+    }
+  }
+}

@@ -1,0 +1,49 @@
+/* Full HD */
+@media all and (min-width: 1920px) {
+  .search__rows {
+    height: calc(100vh - 235px - var(--filter-height));
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-height: calc(675px - var(--filter-height));
+  }
+}
+
+/* Tablet Landscape */
+@media all and (min-width: 1024px) and (max-width: 1919px) {
+  .search__rows {
+    height: calc(100dvh - 235px - var(--filter-height));
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-height: calc(465px - var(--filter-height));
+  }
+}
+
+/* Tablet Portrait */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .search__rows {
+    height: calc(100dvh - 235px - var(--filter-height));
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-height: calc(465px - var(--filter-height));
+  }
+}
+
+/* Mobile*/
+@media all and (max-width: 767px) {
+  .search__rows {
+    height: calc(100dvh - 127.92px - var(--filter-height));
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+  }
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--green200);
+}

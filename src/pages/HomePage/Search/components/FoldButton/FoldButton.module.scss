@@ -1,0 +1,100 @@
+/* Full HD */
+@media all and (min-width: 1920px) {
+  .fileList__foldBtn {
+    display: none;
+  }
+}
+
+/* Tablet Landscape */
+@media all and (min-width: 1024px) and (max-width: 1919px) {
+  .fileList__foldBtn {
+    overflow: hidden;
+    outline: none;
+    box-shadow: var(--shadow);
+    transition: background-color 0.3s;
+    border-width: 0;
+    cursor: pointer;
+    position: absolute;
+    width: 12px;
+    height: 60px;
+    border-radius: 6px;
+    background-color: var(--green200);
+    right: -6px;
+    top: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8px;
+    background-image: url("../../../../../assets/icon/information/information-fold.svg");
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      border-radius: 100%;
+      background-color: rgba(236, 240, 241, 0.3);
+      transform: translate(-50%, -50%);
+    }
+    &:active::before {
+      width: 500%;
+      padding-top: 500%;
+      transition:
+        width 0.2s ease-out,
+        padding-top 0.2s ease-out;
+    }
+  }
+  .fileList__foldBtn.folded {
+    transform: scaleX(-1);
+  }
+}
+
+/* Tablet Portrait */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .fileList__foldBtn {
+    overflow: hidden;
+    outline: none;
+    box-shadow: var(--shadow);
+    transition: background-color 0.3s;
+    border-width: 0;
+    cursor: pointer;
+    position: absolute;
+    width: 12px;
+    height: 60px;
+    border-radius: 6px;
+    background-color: var(--green200);
+    right: -6px;
+    top: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8px;
+    background-image: url("../../../../../assets/icon/information/information-fold.svg");
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      border-radius: 100%;
+      background-color: rgba(236, 240, 241, 0.3);
+      transform: translate(-50%, -50%);
+    }
+    &:active::before {
+      width: 500%;
+      padding-top: 500%;
+      transition:
+        width 0.2s ease-out,
+        padding-top 0.2s ease-out;
+    }
+  }
+
+  .fileList__foldBtn.folded {
+    transform: scaleX(-1);
+  }
+}
+
+/* Mobile*/
+@media all and (max-width: 767px) {
+  .fileList__foldBtn {
+    display: none;
+  }
+}

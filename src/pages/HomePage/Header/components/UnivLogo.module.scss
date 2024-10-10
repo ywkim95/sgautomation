@@ -1,0 +1,39 @@
+/* Full HD */
+@media all and (min-width: 1920px) {
+  .univLogo {
+    width: 130px;
+    height: 30px;
+    // background-image: url("../../assets/icon/logo/logo-jnu.svg");
+    background-repeat: no-repeat;
+    background-position: right 0px center;
+  }
+}
+
+/* Tablet Landscape */
+@media all and (min-width: 1024px) and (max-width: 1919px) {
+  .univLogo {
+    width: 130px;
+    height: 30px;
+    // background-image: url("../../assets/icon/logo/logo-jnu.svg");
+    background-repeat: no-repeat;
+    background-position: right 0px center;
+  }
+}
+
+/* Tablet Portrait */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .univLogo {
+    width: 130px;
+    height: 30px;
+    // background-image: url("../../assets/icon/logo/logo-jnu.svg");
+    background-repeat: no-repeat;
+    background-position: right 0px center;
+  }
+}
+
+/* Mobile*/
+@media all and (max-width: 767px) {
+  .univLogo {
+    display: none;
+  }
+}

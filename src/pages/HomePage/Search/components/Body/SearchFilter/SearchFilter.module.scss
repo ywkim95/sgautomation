@@ -1,0 +1,186 @@
+.search__filter {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  font-weight: 500;
+  .search__mainFilter {
+    display: flex;
+    gap: 8px;
+    padding-left: 8px;
+    margin-bottom: 8px;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0px 8px;
+      height: 18px;
+      border-radius: 9px;
+      cursor: pointer;
+      background-color: transparent;
+      color: var(--DarkFontColor);
+      border: 1px solid var(--lightFontColor);
+    }
+    .selected {
+      background-color: var(--green200);
+      color: var(--white);
+      border: 1px solid var(--green200);
+    }
+  }
+  .search__subFilter {
+    display: flex;
+    background-color: var(--backgroundColor);
+    height: 34px;
+    gap: 8px;
+    align-items: center;
+    padding: 0px 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 18px;
+      padding: 0px 8px;
+      border-radius: 4px;
+      background-color: var(--white);
+      border: 1px solid var(--lightFontColor);
+      cursor: pointer;
+      color: var(--DarkFontColor);
+    }
+    .selectedSub {
+      color: var(--green200);
+      border: 1px solid var(--green200);
+    }
+    .search__search {
+      display: flex;
+      gap: 8px;
+      padding: 0px;
+      border: none;
+      cursor: auto;
+      background-color: var(--backgroundColor);
+      .search__searchWrap {
+        position: relative;
+        border-radius: 4px;
+        border: 1px solid var(--green200);
+      }
+      input {
+        border: none;
+        border-radius: 8px;
+      }
+      .search__searchDate {
+        width: 65px;
+        height: 18px;
+        padding-left: 20px;
+        border-radius: 4px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: var(--DarkFontColor);
+        font-family: Pretendard;
+      }
+      .search__searchIconBox {
+        position: absolute;
+        top: 1.6px;
+        left: 4px;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        border: none;
+        background: url(../../../../../../assets/icon/search/search-date.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 7px;
+        background-color: var(--green200);
+      }
+      input[type="date"]::-webkit-calendar-picker-indicator {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        color: transparent;
+        cursor: pointer;
+      }
+      .search__button {
+        border-radius: 6px;
+        border: 1px solid var(--green200);
+        background-color: var(--green200);
+        cursor: pointer;
+        color: var(--white);
+      }
+    }
+  }
+  .search__filterResult {
+    display: flex;
+    gap: 8px;
+    padding-left: 8px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+    div:not(:last-of-type) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 18px;
+      padding: 0px 8px;
+      border-radius: 4px;
+      background-color: var(--green100);
+      border: 1px solid var(--green200);
+      color: var(--green200);
+      cursor: pointer;
+      &::after {
+        padding-left: 6px;
+        font-weight: 600;
+        content: "X";
+      }
+    }
+  }
+}
+
+.filter__reset {
+  height: 18px;
+  width: 18px;
+  background: url(../../../../../../assets/icon/search/search-reset.svg);
+  background-repeat: no-repeat;
+  background-position: center 5px;
+  background-size: 10px;
+  cursor: pointer;
+}
+
+.search__filter.folded {
+  display: none;
+}
+
+/* Full HD */
+@media all and (min-width: 1920px) {
+  .search__filter {
+    .search__subFilter {
+      .search__search {
+        .search__searchDate {
+          width: 80px;
+        }
+      }
+    }
+  }
+}
+
+/* Mobile*/
+@media all and (max-width: 767px) {
+  .search__filter {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: 500;
+    .search__subFilter {
+      .search__search {
+        .search__searchDate {
+          width: 70px;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+
+  .search__filter {
+    padding-top: 50px;
+  }
+}

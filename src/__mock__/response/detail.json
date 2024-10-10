@@ -1,0 +1,16 @@
+{
+  "id": 1,
+  "rgb": "./images/rgb/2021-07-01_15-00-00.jpg",
+  "nir1": "./images/nir1/2021-07-01_15-00-00.jpg",
+  "nir2": "./images/nir2/2021-07-01_15-00-00.jpg",
+  "measure_real": 10,
+  "measure_analysis": 9,
+  "leafArea_real": 10,
+  "leafArea_analysis": 10,
+  "leafColor_real": "#00ff00",
+  "leafColor_analysis": "#00ee00",
+  "uniformity_real": 10,
+  "uniformity_analysis": 10,
+  "status": 1,
+  "message": null
+}

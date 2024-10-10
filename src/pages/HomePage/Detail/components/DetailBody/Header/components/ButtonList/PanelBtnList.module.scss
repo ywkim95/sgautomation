@@ -1,0 +1,171 @@
+/* Full HD */
+@media all and (min-width:1920px) {
+  .panelHeader__download {
+    display: flex;
+    gap: 15px;
+    > div {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5px;
+      padding: 0 10px;
+      height: 40px;
+      border: 0.5px solid var(--green200);
+      border-radius: 5px;
+      box-shadow: var(--shadow);
+      font-size: 1.6rem;
+      font-weight: 500;
+      > div {
+        width: 22px;
+        height: 22px;
+        background-color: var(--green200);
+        border-radius: 11px;
+      }
+    }
+    .panelHeader__downloadImg:hover,
+    .panelHeader__downloadCsv:hover {
+      background-color: var(--green100);
+      color: var(--green200);
+    }
+    .panelHeader__downloadImgIcon,
+    .panelHeader__downloadCsvIcon {
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .panelHeader__downloadImgIcon {
+      background-image: url("../../../../../../../../assets/icon/information/information-img.svg");
+      background-size : 10px;
+    }
+    .panelHeader__downloadCsvIcon {
+      background-image: url("../../../../../../../../assets/icon/information/information-csv.svg");
+      background-size : 10px;
+    }
+  }
+
+}
+
+/* Tablet Landscape */
+@media all and (min-width:1024px) and (max-width:1919px) {
+  .panelHeader__download {
+    display: flex;
+    gap: 15px;
+    > div {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5px;
+      padding: 0 10px;
+      height: 30px;
+      border: 0.5px solid var(--green200);
+      border-radius: 5px;
+      box-shadow: var(--shadow);
+      font-size: 1.6rem;
+      font-weight: 500;
+      > div {
+        width: 17px;
+        height: 17px;
+        background-color: var(--green200);
+        border-radius: 11px;
+      }
+    }
+    .panelHeader__downloadImg:hover,
+    .panelHeader__downloadCsv:hover {
+      background-color: var(--green100);
+      color: var(--green200);
+    }
+    .panelHeader__downloadImgIcon,
+    .panelHeader__downloadCsvIcon {
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .panelHeader__downloadImgIcon {
+      background-image: url("../../../../../../../../assets/icon/information/information-img.svg");
+      background-size : 9px;
+    }
+    .panelHeader__downloadCsvIcon {
+      background-image: url("../../../../../../../../assets/icon/information/information-csv.svg");
+      background-size : 9px;
+    }
+  }
+
+}
+
+/* Tablet Portrait */
+@media all and (min-width:768px) and (max-width:1023px) {
+  .panelHeader__download {
+    display: flex;
+    gap: 15px;
+    > div {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5px;
+      padding: 0 10px;
+      height: 30px;
+      border: 0.5px solid var(--green200);
+      border-radius: 5px;
+      box-shadow: var(--shadow);
+      font-size: 1.6rem;
+      font-weight: 500;
+      > div {
+        width: 17px;
+        height: 17px;
+        background-color: var(--green200);
+        border-radius: 11px;
+      }
+    }
+    .panelHeader__downloadImg:hover,
+    .panelHeader__downloadCsv:hover {
+        background-color: var(--green100);
+        color: var(--green200);
+    }
+    .panelHeader__downloadImgIcon,
+    .panelHeader__downloadCsvIcon {
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .panelHeader__downloadImgIcon {
+      background-image: url("../../../../../../../../assets/icon/information/information-img.svg");
+      background-size : 9px;
+    }
+    .panelHeader__downloadCsvIcon {
+      background-image: url("../../../../../../../../assets/icon/information/information-csv.svg");
+      background-size : 9px;
+    }
+  }
+
+}
+
+/* Mobile*/
+@media all and (max-width:767px) {
+  .panelHeader__download {
+    display: none;
+  }
+}
+
+.panelHeader__reAnalysis {
+  display: flex;
+  border: 0.5px solid var(--red200);
+  background-color: var(--red200);
+  color: var(--white);
+  div {
+    background-color: var(--white);
+  }
+  .panelHeader__reAnalysisImgIcon {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../../../../../../../assets/icon/information/information-exclamation.svg");
+    background-size : 3px;
+    background-color: var(--white);
+  }
+}
+
+.panelHeader__reAnalysis:hover {
+  background-color: var(--red100);
+  color: var(--red200);
+}

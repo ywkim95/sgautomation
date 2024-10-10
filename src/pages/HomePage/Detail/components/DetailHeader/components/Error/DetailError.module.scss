@@ -1,0 +1,79 @@
+/* Full HD */
+@media all and (min-width:1920px) {
+  .detail__error.completedResult {
+    display: none;
+  }
+
+  .detail__error.failedResult {
+    display: flex;
+    align-items: center;
+    .detail__errorIcon {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background-color: var(--red200);
+      box-shadow: var(--shadow);
+      margin-right: 8px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("../../../../../../../assets/icon/result/result-exclamation.svg");
+      background-size : 3px;
+      &:hover + .detail__errorType {
+        display: block;
+      }
+    }
+    .detail__errorType {
+      display: none;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--red200);
+      text-transform: uppercase;
+    }
+  }
+}
+
+/* Tablet Landscape */
+@media all and (min-width:1024px) and (max-width:1919px) {
+  .detail__error.completedResult {
+    display: none;
+  }
+
+  .detail__error.failedResult {
+    display: flex;
+    align-items: center;
+    .detail__errorIcon {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: var(--red200);
+      box-shadow: var(--shadow);
+      margin-right: 6px;
+      margin-left: -10px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("../../../../../../../assets/icon/result/result-exclamation.svg");
+      background-size : 2px;
+    }
+    .detail__errorType {
+      display: block;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--red200);
+      text-transform: uppercase;
+    }
+  }
+}
+
+/* Tablet Portrait */
+@media all and (min-width:768px) and (max-width:1023px) {
+  .failedResult, .completedResult {
+    display: none;
+  }
+}
+
+/* Mobile*/
+@media all and (max-width:767px) {
+  .failedResult, .completedResult {
+    display: none;
+  }
+}

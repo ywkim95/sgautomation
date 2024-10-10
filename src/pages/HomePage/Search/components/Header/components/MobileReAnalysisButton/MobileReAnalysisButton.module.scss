@@ -1,0 +1,21 @@
+/* Mobile*/
+@media all and (max-width: 767px) {
+  .fileList__reanalysisBtn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 37.92px;
+    width: 37.92px;
+    border-radius: 10px;
+    background-color: var(--white);
+    color: var(--DarkFontColor);
+    z-index: 200;
+    span {
+      font-size: 2.2rem;
+    }
+  }
+}

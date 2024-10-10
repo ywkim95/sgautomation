@@ -1,0 +1,65 @@
+/* Full HD */
+@media all and (min-width: 1920px) {
+  .main {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 325.5px 1fr;
+    grid-template-rows: 45px 1fr;
+    gap: 30px;
+    padding: 0px 55px;
+    > section {
+      border-radius: 10px;
+      background-color: var(--white);
+      box-shadow: var(--shadow);
+    }
+  }
+}
+
+/* Tablet Landscape */
+@media all and (min-width: 1024px) and (max-width: 1919px) {
+  .main {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 295.5px 669.5px;
+    grid-template-rows: 35px 1fr;
+    gap: 20px; // 30에서 변경
+    justify-content: center;
+    > section {
+      border-radius: 10px;
+      background-color: var(--white);
+      box-shadow: var(--shadow);
+    }
+  }
+  .main.folded {
+    grid-template-columns: 130.5px 834.5px;
+  }
+}
+
+/* Tablet Portrait */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .main {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 295.5px 412.5px;
+    grid-template-rows: 35px 1fr;
+    gap: 20px; // 30에서 변경
+    justify-content: center;
+    > section {
+      border-radius: 10px;
+      background-color: var(--white);
+      box-shadow: var(--shadow);
+    }
+  }
+  .main.folded {
+    grid-template-columns: 130.5px 577.5px;
+  }
+}
+
+/* Mobile*/
+@media all and (max-width: 767px) {
+  .main {
+    height: calc(100vh - 55px - 57.91px);
+    display: grid;
+    grid-row: span 2;
+  }
+}

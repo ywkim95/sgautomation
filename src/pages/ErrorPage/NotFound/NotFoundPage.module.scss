@@ -1,0 +1,41 @@
+.errorPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; // 화면 전체 높이를 차지하도록 설정
+  background-color: var(--backgroundColor);
+  color: var(--DarkFontColor);
+  text-align: center;
+
+  h1 {
+    font-size: 5rem; // 크고 눈에 띄는 404 숫자
+    color: var(--red200);
+  }
+
+  h3 {
+    font-size: 2rem;
+    margin: 20px 0; // 제목과 버튼 사이에 적당한 간격 제공
+    color: var(--lightFontColor);
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: var(--green200);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: var(--green300);
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: var(--shadow);
+    }
+  }
+}

@@ -1,0 +1,492 @@
+/* Full HD */
+@media all and (min-width:1920px) {
+  .panelBody__table {
+    table {
+      display: grid;
+      grid-template-rows: 1fr 3fr;
+      width: 100%;
+      height: 100%;
+      font-size: 1.4rem;
+      thead {
+        border-radius: 10px 10px 0px 0px;
+        background-color: var(--green200);
+        font-weight: 700;
+        color: var(--white);
+        tr {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          width: 100%;
+          height: 100%;
+          th {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:not(:nth-child(1)) {
+              justify-content: start;
+              padding-left: 10px;
+            }
+          }
+          th:not(th:nth-child(4)) {
+            border-right: 2px solid var(--white);
+          }
+        }
+      }
+      tbody {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        font-weight: 400;
+        tr {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          height: 100%;
+          th, td {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          td:not(:nth-child(1)) {
+            justify-content: start;
+            padding-left: 10px;
+          }
+          &:nth-child(2) {
+            background-color: var(--tableColor);
+          }
+          &:nth-child(odd) th, &:nth-child(odd) td:not(td:nth-child(4)) {
+            border-right: 2px solid var(--tableColor);
+          }
+          &:nth-child(even) th, &:nth-child(even) td:not(td:nth-child(4)) {
+            border-right: 2px solid var(--white);
+          }
+        }
+        div {
+          width: 11px;
+          height: 11px;
+          margin-right: 3px;
+          border-radius: 2px;
+        }
+      }
+      thead tr th,
+      tbody tr th,
+      tbody tr td {
+        min-width: 70px; // 테이블 깨짐 방지
+      }
+    }
+  }
+
+  .panelBody__table.failedResult {
+    position: relative;
+    &::after {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      border-radius: 0px 0px 10px 10px;
+      background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 7px, rgba(241, 39, 40, 0.3), rgba(241, 39, 40, 0.3) 11px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--red200);
+      text-transform: uppercase;
+      font-size: 2.8rem;
+      font-weight: 600;
+      content: "error";
+    }
+    tbody {
+      //tr td:not(:nth-child(2)) {
+      //  color: var(--white);
+      //  div {
+      //    display: none;
+      //  }
+      //}
+      //tr:nth-child(2) td {
+      //  color: var(--tableColor);
+      //}
+      tr {
+        &:nth-child(3) th, &:nth-child(3) td:not(td:nth-child(4)),
+        &:nth-child(even) th, &:nth-child(even) td:not(td:nth-child(4)) {
+          border-right: none;
+        }
+      }
+    }
+  }
+}
+
+/* Tablet Landscape */
+@media all and (min-width:1024px) and (max-width:1919px) {
+  .panelBody__table {
+    width: 626.3px;
+    height: 120px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    table {
+      display: grid;
+      grid-template-rows: 1fr 3fr;
+      width: 100%;
+      height: 100%;
+      font-size: 1.4rem;
+      thead {
+        border-radius: 10px 10px 0px 0px;
+        background-color: var(--green200);
+        font-weight: 700;
+        color: var(--white);
+        tr {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          width: 100%;
+          height: 100%;
+          th {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:not(:nth-child(1)) {
+              justify-content: start;
+              padding-left: 10px;
+              span span {
+                font-size: 1.0rem;
+                font-weight: 500;
+              }
+            }
+          }
+          th:not(th:nth-child(4)) {
+            border-right: 2px solid var(--white);
+          }
+        }
+      }
+      tbody {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        font-weight: 400;
+        border: 2px solid var(--tableColor);
+        border-radius: 0px 0px 10px 10px;
+        tr {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          height: 100%;
+          th, td {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          td:not(:nth-child(1)) {
+            justify-content: start;
+            padding-left: 10px;
+          }
+          &:nth-child(2) {
+            background-color: var(--tableColor);
+          }
+          &:nth-child(odd) th, &:nth-child(odd) td:not(td:nth-child(4)) {
+            border-right: 2px solid var(--tableColor);
+          }
+          &:nth-child(even) th, &:nth-child(even) td:not(td:nth-child(4)) {
+            border-right: 2px solid var(--white);
+          }
+          .table__color {
+            font-size: 0px;
+            div {
+              width: calc(100% - 20px);
+              height: calc(100% - 10px);
+              border-radius: 2px;
+            }
+          }
+        }
+      }
+      thead tr th,
+      tbody tr th,
+      tbody tr td {
+        min-width: 60px; // 테이블 깨짐 방지
+      }
+    }
+  }
+  .panelBody__table.folded {
+    width: auto;
+    height: 150px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+  }
+
+  .panelBody__table.failedResult {
+    position: relative;
+    &::after {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      border-radius: 0px 0px 10px 10px;
+      background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 8px, rgba(241, 39, 40, 0.3), rgba(241, 39, 40, 0.3) 11px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--red200);
+      text-transform: uppercase;
+      font-size: 2.8rem;
+      font-weight: 600;
+      content: "error";
+    }
+    tbody {
+      //tr td:not(:first-child) {
+      //  color: var(--white);
+      //  div {
+      //    display: none;
+      //  }
+      //}
+      //tr:nth-child(2) td {
+      //  color: var(--tableColor);
+      //}
+      tr {
+        &:nth-child(3) th, &:nth-child(odd) td:not(td:nth-child(4)),
+        &:nth-child(even) th, &:nth-child(even) td:not(td:nth-child(4)) {
+          border-right: none;
+        }
+      }
+    }
+  }
+}
+
+/* Tablet Portrait */
+@media all and (min-width:768px) and (max-width:1023px) {
+  .panelBody__table {
+    height: 120px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    table {
+      display: grid;
+      grid-template-rows: 1fr 3fr;
+      width: 100%;
+      height: 100%;
+      font-size: 1.4rem;
+      thead {
+        border-radius: 10px 10px 0px 0px;
+        background-color: var(--green200);
+        font-weight: 700;
+        color: var(--white);
+        tr {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          width: 100%;
+          height: 100%;
+          th {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:not(:nth-child(1)) {
+              justify-content: start;
+              padding-left: 10px;
+              span span {
+                font-size: 1.0rem;
+                font-weight: 500;
+              }
+            }
+          }
+          th:not(th:nth-child(4)) {
+            border-right: 2px solid var(--white);
+          }
+        }
+      }
+      tbody {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        font-weight: 400;
+        border-radius: 0px 0px  10px 10px;
+        tr {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          height: 100%;
+          th, td {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          td:not(:nth-child(1)) {
+            justify-content: start;
+            padding-left: 10px;
+          }
+          &:nth-child(2) {
+            background-color: var(--tableColor);
+          }
+          &:nth-child(odd) th, &:nth-child(odd) td:not(td:nth-child(4)) {
+            border-right: 2px solid var(--tableColor);
+          }
+          &:nth-child(even) th, &:nth-child(even) td:not(td:nth-child(4)) {
+            border-right: 2px solid var(--white);
+          }
+          .table__color {
+            font-size: 0px;
+            div {
+              width: calc(100% - 20px);
+              height: calc(100% - 10px);
+              border-radius: 2px;
+            }
+          }
+        }
+      }
+      thead tr th,
+      tbody tr th,
+      tbody tr td {
+        min-width: 60px; // 테이블 깨짐 방지
+      }
+    }
+  }
+
+  .panelBody__table.failedResult {
+    position: relative;
+    &::after {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      border-radius: 0px 0px 10px 10px;
+      background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 8px, rgba(241, 39, 40, 0.3), rgba(241, 39, 40, 0.3) 11px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--red200);
+      text-transform: uppercase;
+      font-size: 2.8rem;
+      font-weight: 600;
+      content: "error";
+    }
+    tbody {
+      //tr:not(:first-child) td {
+      //  color: var(--white);
+      //  div {
+      //    display: none;
+      //  }
+      //}
+      //tr:nth-child(2) td {
+      //  color: var(--tableColor);
+      //}
+      tr {
+        &:nth-child(3) th, &:nth-child(odd) td:not(td:nth-child(4)),
+        &:nth-child(even) th, &:nth-child(even) td:not(td:nth-child(4)) {
+          border-right: none;
+        }
+      }
+    }
+  }
+}
+
+/* Mobile*/
+@media all and (max-width:767px) {
+  .panelBody__table {
+    width: calc(100vw - 40px);
+    height: 120px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    overflow-x: scroll;
+    table {
+      display: grid;
+      grid-template-rows: 1fr 3fr;
+      width: 100%;
+      height: 100%;
+      font-size: 1.0rem;
+      thead {
+        border-radius: 10px 10px 0px 0px;
+        background-color: var(--green200);
+        font-weight: 700;
+        color: var(--white);
+        tr {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          width: 100%;
+          height: 100%;
+          th {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:not(:nth-child(1)) {
+              justify-content: start;
+              padding-left: 3px;
+              span span {
+                font-size: 1.0rem;
+                font-weight: 500;
+              }
+            }
+          }
+          th:not(th:nth-child(4)) {
+            border-right: 2px solid var(--white);
+          }
+        }
+      }
+      tbody {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        font-weight: 400;
+        tr {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          height: 100%;
+          th, td {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          td:not(:nth-child(1)) {
+            justify-content: start;
+            padding-left: 3px;
+          }
+          &:nth-child(2) {
+            background-color: var(--tableColor);
+          }
+          &:nth-child(odd) th, &:nth-child(odd) td:not(td:nth-child(4)) {
+            border-right: 2px solid var(--tableColor);
+          }
+          &:nth-child(even) th, &:nth-child(even) td:not(td:nth-child(4)) {
+            border-right: 2px solid var(--white);
+          }
+        }
+        div {
+          width: 11px;
+          height: 11px;
+          margin-right: 3px;
+          border-radius: 2px;
+        }
+      }
+      thead tr th,
+      tbody tr th,
+      tbody tr td {
+        min-width: 40px; // 테이블 깨짐 방지
+      }
+    }
+  }
+
+  .panelBody__table.failedResult {
+    position: relative;
+    &::after {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      border-radius: 0px 0px 10px 10px;
+      background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 8px, rgba(241, 39, 40, 0.3), rgba(241, 39, 40, 0.3) 11px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--red200);
+      text-transform: uppercase;
+      font-size: 2.8rem;
+      font-weight: 600;
+      content: "error";
+    }
+    tbody {
+      //tr:not(:first-child) td {
+      //  color: var(--white);
+      //  div {
+      //    display: none;
+      //  }
+      //}
+      //tr:nth-child(2) td {
+      //  color: var(--tableColor);
+      //}
+      tr {
+        &:nth-child(3) th, &:nth-child(odd) td:not(td:nth-child(4)),
+        &:nth-child(even) th, &:nth-child(even) td:not(td:nth-child(4)) {
+          border-right: none;
+        }
+      }
+    }
+  }
+}

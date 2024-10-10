@@ -1,0 +1,179 @@
+/* Full HD */
+@media all and (min-width:1920px) {
+  .panelBody__imageLeftBtn,
+  .panelBody__imageRightBtn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: calc(100vh - 335px);
+    min-height: 565px;
+    cursor: pointer;
+    z-index: 100;
+  }
+  .panelBody__imageLeftBtn{
+    left: 0;
+    &:hover {
+      border-radius: 10px 0 0 10px;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 70%, rgba(255, 255, 255, 0) 100%);
+      &::after {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../../../../../../../../../assets/icon/information/information-left-arrow.svg");
+        background-size : 10px;
+        content: "";
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+  .panelBody__imageRightBtn {
+    right: 0;
+    &:hover {
+      border-radius: 0 10px 10px 0;
+      background: linear-gradient(to left, rgba(255, 255, 255, 0.1) 70%, rgba(255, 255, 255, 0) 100%);
+      &::after {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../../../../../../../../../assets/icon/information/information-right-arrow.svg");
+        background-size : 10px;
+        content: "";
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+}
+
+/* Tablet Landscape */
+@media all and (min-width:1024px) and (max-width:1919px) {
+  .panelBody__imageLeftBtn,
+  .panelBody__imageRightBtn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 472.634px;
+    min-height: 250px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .panelBody__imageLeftBtn{
+    left: 0;
+    &:hover {
+      border-radius: 10px 0 0 10px;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 70%, rgba(255, 255, 255, 0) 100%);
+      &::after {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../../../../../../../../../assets/icon/information/information-left-arrow.svg");
+        background-size : 7px;
+        content: "";
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+  .panelBody__imageRightBtn {
+    right: 0;
+    &:hover {
+      border-radius: 0 10px 10px 0;
+      background: linear-gradient(to left, rgba(255, 255, 255, 0.1) 70%, rgba(255, 255, 255, 0) 100%);
+      &::after {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../../../../../../../../../assets/icon/information/information-right-arrow.svg");
+        background-size : 7px;
+        content: "";
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+  .panelBody__imageLeftBtn.folded,
+  .panelBody__imageRightBtn.folded {
+    height: calc(100vh - 270px);
+    min-height: 430px;
+  }
+}
+
+/* Tablet Portrait */
+@media all and (min-width:768px) and (max-width:1023px) {
+  .panelBody__imageLeftBtn,
+  .panelBody__imageRightBtn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 279.676px;
+    min-height: 250px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .panelBody__imageLeftBtn{
+    left: 0;
+    &:hover {
+      border-radius: 10px 0 0 10px;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 70%, rgba(255, 255, 255, 0) 100%);
+      &::after {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../../../../../../../../../assets/icon/information/information-left-arrow.svg");
+        background-size : 7px;
+        content: "";
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+  .panelBody__imageRightBtn {
+    right: 0;
+    &:hover {
+      border-radius: 0 10px 10px 0;
+      background: linear-gradient(to left, rgba(255, 255, 255, 0.1) 70%, rgba(255, 255, 255, 0) 100%);
+      &::after {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../../../../../../../../../assets/icon/information/information-right-arrow.svg");
+        background-size : 7px;
+        content: "";
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+  .panelBody__imageLeftBtn.folded,
+  .panelBody__imageRightBtn.folded {
+    height: 403.55px;
+  }
+}
+
+/* Mobile*/
+@media all and (max-width:767px) {
+  .panelBody__imageLeftBtn,
+  .panelBody__imageRightBtn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size : 8px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .panelBody__imageLeftBtn {
+    left: 0;
+    background-image: url("../../../../../../../../../assets/icon/information/information-left-arrow.svg");
+  }
+  .panelBody__imageRightBtn {
+    right: 0;
+    background-image: url("../../../../../../../../../assets/icon/information/information-right-arrow.svg");
+  }
+}

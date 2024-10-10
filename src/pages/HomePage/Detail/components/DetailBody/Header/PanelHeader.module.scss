@@ -1,0 +1,61 @@
+/* Full HD */
+@media all and (min-width:1920px) {
+  .panelHeader__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 58px;
+    padding: 0px 0px 17px 10px;
+    .panelHeader__mainTitle {
+      font-size: 2.3rem;
+      font-weight: 700;
+    }
+  }
+}
+
+/* Tablet Landscape */
+@media all and (min-width:1024px) and (max-width:1919px) {
+  .panelHeader__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 48px;
+    padding-bottom: 17px;
+    .panelHeader__mainTitle {
+      font-size: 2.3rem;
+      font-weight: 700;
+    }
+  }
+}
+
+/* Tablet Portrait */
+@media all and (min-width:768px) and (max-width:1023px) {
+  .panelHeader__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 48px;
+    padding-bottom: 17px;
+    .panelHeader__mainTitle {
+      font-size: 2.3rem;
+      font-weight: 700;
+    }
+  }
+}
+
+/* Mobile*/
+@media all and (max-width:767px) {
+  .panelHeader__title {
+    display: flex;
+    position: relative;
+    justify-content: start;
+    align-items: center;
+    height: 73.12px;
+    background-color: var(--white);
+    .panelHeader__mainTitle {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-left: 20px;
+    }
+  }
+}

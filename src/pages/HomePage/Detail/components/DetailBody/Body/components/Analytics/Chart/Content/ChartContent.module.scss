@@ -1,0 +1,120 @@
+/* Full HD */
+@media all and (min-width:1920px) {
+  .panelBody__chartWrap {
+    //display: grid;
+    //grid-template-columns: 1fr 1fr;
+    //gap: 10px;
+    display: flex;
+    flex-direction: row;
+
+    figure {
+      margin: 0;
+      padding: 0;
+      width: 100%; // 전체 너비 사용
+      height: 100%; // 높이는 내용에 맞춤
+
+      canvas {
+        width: 100% !important;
+        height: 250px;
+      }
+    }
+  }
+
+  .panelBody__chartPlantHeight,
+  .panelBody__chartLeafArea {
+    //background-color: var(--lightGray);
+  }
+}
+
+/* Tablet Landscape */
+@media all and (min-width:1024px) and (max-width:1919px) {
+  .panelBody__chartWrap {
+    //display: grid;
+    //grid-template-columns: 1fr 1fr;
+    //gap: 10px;
+    display: flex;
+    flex-direction: row;
+
+    figure {
+      margin: 0;
+      padding: 0;
+      width: 100%; // 전체 너비 사용
+      height: auto; // 높이는 내용에 맞춤
+
+      canvas {
+        width: 100% !important;
+        height: 225px !important;
+      }
+    }
+
+  }
+  .panelBody__chartWrap.folded {
+    figure {
+      canvas {
+        height: 125px !important;
+      }
+    }
+  }
+
+
+  .panelBody__chartPlantHeight,
+  .panelBody__chartLeafArea {
+    //background-color: var(--lightGray);
+  }
+}
+
+/* Tablet Portrait */
+@media all and (min-width:768px) and (max-width:1023px) {
+  .panelBody__chartWrap {
+    //display: grid;
+    //grid-template-columns: 1fr 1fr;
+    //gap: 10px;
+    display: flex;
+    flex-direction: row;
+
+    figure {
+      margin: 0;
+      padding: 0;
+      width: 100%; // 전체 너비 사용
+      height: auto; // 높이는 내용에 맞춤
+
+      canvas {
+        width: 100% !important;
+        height: 225px !important;
+      }
+    }
+  }
+
+  .panelBody__chartPlantHeight,
+  .panelBody__chartLeafArea {
+    //background-color: var(--lightGray);
+  }
+}
+
+/* Mobile*/
+@media all and (max-width:767px) {
+  .panelBody__chartWrap {
+    //display: grid;
+    //grid-template-columns: 1fr 1fr;
+    //gap: 10px;
+    display: flex;
+    flex-direction: row;
+
+    figure {
+      margin: 0;
+      padding: 0;
+      width: 100%; // 전체 너비 사용
+      height: auto; // 높이는 내용에 맞춤
+
+      canvas {
+        width: 100% !important;
+        height: 230px !important;
+      }
+    }
+  }
+
+  .panelBody__chartPlantHeight,
+  .panelBody__chartLeafArea {
+    //background-color: var(--lightGray);
+  }
+}

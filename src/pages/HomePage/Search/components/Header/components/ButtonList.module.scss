@@ -1,0 +1,123 @@
+/* Full HD */
+@media all and (min-width: 1920px) {
+  .search__headerBtn {
+    display: flex;
+    gap: 10px;
+    .search__imageBtn,
+    .search__tableBtn,
+    .search__graphBtn {
+      height: 21px;
+      width: 21px;
+      border-radius: 10px;
+      background-color: var(--white);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto 12px;
+    }
+    .search__imageBtn {
+      background-image: url("../../../../../../assets/icon/search/search-image.svg");
+    }
+    .search__tableBtn {
+      background-image: url("../../../../../../assets/icon/search/search-table.svg");
+    }
+    .search__graphBtn {
+      background-image: url("../../../../../../assets/icon/search/search-graph.svg");
+      background-size: auto 15px;
+    }
+  }
+}
+
+/* Tablet Landscape */
+@media all and (min-width: 1024px) and (max-width: 1919px) {
+  .search__headerBtn {
+    display: flex;
+    gap: 10px;
+    .search__imageBtn,
+    .search__tableBtn,
+    .search__graphBtn {
+      height: 21px;
+      width: 21px;
+      border-radius: 10px;
+      background-color: var(--white);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto 12px;
+    }
+    .search__imageBtn {
+      background-image: url("../../../../../../assets/icon/search/search-image.svg");
+    }
+    .search__tableBtn {
+      background-image: url("../../../../../../assets/icon/search/search-table.svg");
+    }
+    .search__graphBtn {
+      background-image: url("../../../../../../assets/icon/search/search-graph.svg");
+      background-size: auto 15px;
+    }
+  }
+  .search__headerBtn.folded {
+    .search__imageBtn,
+    .search__tableBtn {
+      display: none;
+    }
+  }
+}
+
+/* Tablet Portrait */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .search__headerBtn {
+    display: flex;
+    gap: 10px;
+    .search__imageBtn,
+    .search__tableBtn,
+    .search__graphBtn {
+      height: 21px;
+      width: 21px;
+      border-radius: 10px;
+      background-color: var(--white);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto 12px;
+    }
+    .search__imageBtn {
+      background-image: url("../../../../../../assets/icon/search/search-image.svg");
+    }
+    .search__tableBtn {
+      background-image: url("../../../../../../assets/icon/search/search-table.svg");
+    }
+    .search__graphBtn {
+      background-image: url("../../../../../../assets/icon/search/search-graph.svg");
+      background-size: auto 15px;
+    }
+  }
+  .search__headerBtn.folded {
+    .search__imageBtn,
+    .search__tableBtn {
+      display: none;
+    }
+  }
+}
+
+/* Mobile*/
+@media all and (max-width: 767px) {
+  .search__imageBtn,
+  .search__tableBtn,
+  .search__graphBtn {
+    display: none;
+  }
+
+  .search__graphBtn {
+    display: flex;
+    position: absolute;
+    left: calc(100vw - 78px);
+    top: 18px;
+    height: 37.92px;
+    width: 37.92px;
+    border-radius: 50%;
+    background-color: var(--green200);
+    background-image: url("../../../../../../assets/icon/search/search-graph--white.svg");
+    background-size: auto 25px;
+    background-repeat: no-repeat;
+    background-position: calc(50% + 1px) 7px;
+    z-index: 1;
+  }
+}

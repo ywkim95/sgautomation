@@ -1,0 +1,120 @@
+/* Full HD */
+@media all and (min-width: 1920px) {
+  body,
+  html {
+    font-size: 62.5%;
+    white-space: nowrap;
+    color: var(-DarkFontColor);
+  }
+
+  .page {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // display: grid;
+    // grid-template-rows: 75px 1fr 55px;
+    height: 100vh;
+    min-height: 900px;
+    font-family: "Pretendard";
+  }
+}
+
+/* Labtop */
+@media all and (min-width: 1280px) and (max-width: 1919px) {
+  body,
+  html {
+    font-size: 50%;
+    white-space: nowrap;
+    color: var(-DarkFontColor);
+  }
+
+  .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // display: grid;
+    // grid-template-rows: 75px 1fr 55px;
+    height: 100dvh;
+    min-height: 700px;
+    font-family: "Pretendard";
+  }
+}
+
+/* Tablet Landscape */
+@media all and (min-width: 1024px) and (max-width: 1279px) {
+  body,
+  html {
+    font-size: 50%;
+    white-space: nowrap;
+    color: var(-DarkFontColor);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // display: grid;
+    // grid-template-rows: 75px 1fr 55px;
+    height: 100dvh;
+    min-height: 700px;
+    font-family: "Pretendard";
+  }
+}
+
+/* Tablet Portrait */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  body,
+  html {
+    font-size: 50%;
+    white-space: nowrap;
+    color: var(-DarkFontColor);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // display: grid;
+    // grid-template-rows: 75px 1fr 55px;
+    height: 100dvh;
+    min-height: 700px;
+    font-family: "Pretendard";
+  }
+}
+
+/* Mobile*/
+@media all and (max-width: 767px) {
+  body,
+  html {
+    font-size: 55%;
+    white-space: nowrap;
+    color: var(-DarkFontColor);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .page {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // display: grid;
+    // grid-template-rows: 57.92px 1fr 55px;
+    height: 100dvh;
+    font-family: "Pretendard";
+  }
+}

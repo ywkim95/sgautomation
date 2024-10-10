@@ -1,0 +1,39 @@
+/* Full HD */
+@media all and (min-width: 1920px) {
+  .search__count {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 5px 5px;
+    font-size: 1.3rem;
+  }
+}
+
+/* Tablet Landscape */
+@media all and (min-width: 1024px) and (max-width: 1919px) {
+  .search__count {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 5px 5px;
+    font-size: 1.5rem;
+  }
+}
+
+/* Tablet Portrait */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .search__count {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 5px 5px;
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile*/
+@media all and (max-width: 767px) {
+  .search__count {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 5px 5px;
+    font-size: 1.3rem;
+  }
+}
